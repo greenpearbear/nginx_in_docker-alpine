@@ -1,0 +1,14 @@
+services:
+  nginx:
+    image: greenpearbear/mynginx_alpine
+    ports:
+      - "8080:8080"
+    volumes:
+      - type: volume
+        source: static-file
+        target: /www/html
+      - /home/etoya/mydocker/nginx.conf:/etc/nginx/nginx.conf
+
+volumes:
+  static-file:
+
