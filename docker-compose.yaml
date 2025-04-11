@@ -1,6 +1,6 @@
 services:
   nginx:
-    image: greenpearbear/mynginx_alpine
+    image: greenpearbear/mynginx_alpine:final
     ports:
       - "8080:8080"
     volumes:
