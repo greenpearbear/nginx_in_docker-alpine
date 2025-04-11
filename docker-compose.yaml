@@ -7,7 +7,7 @@ services:
       - type: volume
         source: static-file
         target: /www/html
-      - /home/etoya/mydocker/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx.conf:/etc/nginx/nginx.conf
 
 volumes:
   static-file:
