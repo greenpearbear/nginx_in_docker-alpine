@@ -14,4 +14,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY static /www/html
 
+VOLUME /www/html
+
 CMD ["nginx", "-g", "daemon off;"]
